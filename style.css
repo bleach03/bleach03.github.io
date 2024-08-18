@@ -11,11 +11,10 @@
 
 html, body{
     background-color: black;
-    cursor: none;
 }
 
 canvas{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -23,59 +22,73 @@ canvas{
 }
 
 header{
-    position: relative;
+    position: fixed;
     height: 60px;
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     padding-left: 2rem;
     background: rgb(0, 0, 0);
+    z-index: 1;
 }
 
 header h1{
     font-size: 2rem;
+    transition: transform .5 ease-in-out;
+}
+
+.header2{
+    position: fixed;
+    top: 16rem;
+    left: 6rem;
+}
+
+.header3{
+    position: fixed;
+    top:24rem;
+    left: 6rem;
 }
 
 .header {
-    position: relative;
-    top: 2rem;
-    left: 2rem;
+    position: fixed;
+    top: 8rem;
+    left: 6rem;
 }
 
 .hero {
-    position: relative;
+    position: fixed;
     height: calc(100svh - 60px);
 }
 
 .hero h1{
-    position: absolute;
-    bottom: 4rem;
-    left: 2rem
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
 }
 
 .icon{
-    position: absolute;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    position: fixed;
     font-size: 30px;
+    top: 1rem;
     transition: transform .5s ease-in-out;
+    z-index: 2;
+
 }
 
 .icon:hover{
     transform: scale(1.5);
 }
 
-.icon:nth-of-type(1) {
-    right: 60px;
-}
-
-.icon:nth-of-type(2) {
+.icon:nth-child(1) {
     right: 100px;
 }
 
-.icon:nth-of-type(3) {
-    right: 140px;
+.icon:nth-child(2) {
+    right: 60px; 
+}
+
+.icon:nth-child(3) {
+    right: 20px; 
 }
 
 .project_text{

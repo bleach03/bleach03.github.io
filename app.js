@@ -54,6 +54,18 @@ class Particle {
     }
 }
 
+function projectClick(){
+    window.location.href='projects.html';
+}
+
+function aboutMeClick(){
+    window.location.href='about.html';
+}
+
+function contactMeClick(){
+    window.location.href='contactme.html';
+}
+
 class Effect {
     constructor(width, height, context) {
         this.width = width;
